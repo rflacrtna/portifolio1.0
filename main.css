@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'roboto',sans-serif;
+    background:#fffbfb; 
+    background-image: url(https://i.ibb.co/nQQn8zc/bannerrafs-1.png); 
+    background-repeat: no-repeat;
+    background-size: 100%;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;  
+}
+img{
+    width: 100%; 
+}
+/*End global*/
+/*Start reusable*/
+.container{
+    width: 90%;
+    max-width: 120rem;    
+}
+/*End reusable*/
+/*Start header*/
+.logo h1{
+    width: 15vh;
+    font-size: 2rem;
+    font-family: Helvetica,Arial, sans-serif;
+    text-transform: uppercase;
+    position: fixed;
+    color:#424075;
+    margin-left:5%;  
+    top:7vh;
+    font-weight:bold;     
+ }
+ 
+nav {
+    display:flex;
+    margin-left:90%;
+    align-items:center;
+    justify-content: space-around;
+    min-height:8vh;
+    margin-top:2rem;
+    position:fixed;
+    top:3vh;
+    z-index:999;
+}
+ .nav-link{ 
+    display:flex;
+    justify-content: space-around;   
+    width:50px;       
+}
+
+.nav-link a{
+    color:#424075;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:1.5rem;
+    display:absolute;
+    align-items:center;
+}
+.nav-link li{
+    list-style:none;
+}
+.burger div{
+    width:25px;
+    height:3px;
+    background-color:#424075;
+    margin:3px;    
+}
+.burger{
+    display:none;    
+}
+.landing-text h1{
+    display:block;
+    font-family:"Roboto","helvetica", "Arial", "sans-serif";
+    font-size: 12rem;
+    color: white;
+    text-transform: uppercase;
+    text-align:center;
+    margin-top:27%;        
+   }
+.social-media .container-fluid{
+    width: 90%;  
+    margin: 1rem;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.social-media .lin h6{    
+    margin-left: 45%;    
+    font-size: 1.5rem;
+    font-weight: 600; 
+    display: inline-block;  
+    text-transform: uppercase; 
+    color:white;
+    margin-top:-5rem;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.social-media .be h6{  
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 55%;  
+    margin-top:-2rem;
+    text-transform: uppercase;
+    color:white;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+.seta img{
+    width:2.5%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-top:4rem;
+    display:block;
+}
+/*box*/
+.container {
+    display: flex;
+    width: 60%;
+    height: 100vh;
+    padding: 4% 2%;
+    margin-left:auto;
+    margin-right:auto;
+  }  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .10s;
+    margin: 0 2%;
+    line-height: 0;
+  }  
+  .box > img {
+    width: 105%;
+    height: calc(100% - 10vh);
+    object-fit: contain; 
+    transition: .5s;
+  }
+  .box > a {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    color:#424075;
+  }
+  .box:hover { flex: 1 1 10%; }
+  .box:hover > img {
+    width: 100%;
+    height: 90%;
+  }   
+/*Start footer*/
+.copyright .container-fluid{
+    width:100%;
+    height: 5vh;
+}
+.up p{ 
+    text-align:center;
+    font-size: 1.2em;    
+    color:#424075;
+    margin-top:2rem;
+}   
+/*End footer*/
+/*media queries*/
+@media screen and (max-width:1024px){
+    html{
+        background-image: url(https://i.ibb.co/7KGxxLV/bannerrafs2-1.png);
+    }
+    .logo h1{
+        font-size:1.8rem;
+    }
+        .landing-text h1{
+            font-size:10rem;
+            margin-top:62vh;
+        }       
+        .box span a{
+            font-size:2rem;
+            height:1vh;
+        }
+          .seta img{
+              width:5rem;
+              margin-top:6rem;
+          }
+          nav{              
+          margin-left:87%;
+          }
+          .social-media .be h6{  
+              margin-top:1;
+    }
+@media screen and ( max-width:768px){
+    
+    body{
+  overflow-x: hidden;
+    }
+    nav {
+        display:block;
+        margin-left:90%;
+        margin-top:2rem;           
+    }
+   
+    .nav-link {
+        width:100%;
+        position:absolute;
+        right:5px;
+        height:92vh;
+        top:8vh;
+        background-color: #FF6666;        
+        transform:translate(100%);
+        transition:transform 0.5s ease-in;
+        z-index:999; 
+        color:black;        
+    }     
+     .nav-active{
+        transform:translateX(0);
+     }
+     .burger{
+         display:block;
+         position:fixed;
+         cursor:pointer;
+         z-index:1000;
+     }
+     .logo h1{
+         margin-left:2rem;
+         margin-top:2rem;
+         font-size:1.5rem;
+         position:fixed;
+         top:2rem;
+     }       
+    .landing-text h1{
+        font-size:7rem; 
+        margin-top:25vh;                 
+        }
+        .box span a{
+            font-size:2.5rem;
+            height:-10vh;
+        }
+        .container {          
+            width: 60%;
+            height: 70vh;           
+          } 
+    .social-media .lin h6{    
+        margin-left: 35%;    
+        font-size: 1.5rem;
+        font-weight: 600; 
+        display: inline-block;  
+        text-transform: uppercase; 
+        color:white;
+        margin-top:-3rem;
+        text-shadow: black 0.1em 0.1em 0.2em
+    }
+    .social-media .be h6{  
+        font-size: 1.5rem;      
+        margin-left: 60%;         
+    }
+}
+@media screen and ( max-width:425px){
+    html{
+        background-image: url(https://i.ibb.co/r2jvMyC/bannerrafs3.png);
+    }
+    .logo h1{
+        z-index:999;
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .landing-text h1{
+        font-size:8rem;
+        margin-top:95%;
+        margin-bottom:3rem;
+    }
+    .seta{
+        display:none;
+    }
+    .social-media .lin h6{    
+        margin-left: 27%; 
+    }
+    .container {
+        width: 70%; 
+        display:block;
+    }  
+    footer{
+        display:none;
+    }
+}
+@media screen and (max-width:768px){
+    .landing-text h1{
+        font-size:5rem;
+    }
+    .logo h1{
+        font-size:1.5rem;
+    }
+    .burger div{
+        width:20px;
+        height:2px;      
+        margin-right:3rem;    
+    }
+    .nav-link{
+        display:none;
+    }
+}}
