@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    background:#FDFDFD;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    overflow:hidden;  
+       
+}
+
+a{
+    text-decoration: none;  
+}
+.container{
+    width: 90%;
+    max-width: 120rem;    
+}
+header{
+    background-color: #ffffff;
+    display: block;
+}
+.logo h5{
+    width: 30vh;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    color:#424075;
+    margin-left:5%;  
+    top:7vh;
+    font-weight: bold;  
+    text-transform: uppercase; 
+ }
+
+nav {
+    display:flex;
+    margin-left:85%;  
+    margin-top:2rem;
+    position:fixed;
+    top:3vh;
+    z-index:999;
+}
+.nav-link{ 
+    display:flex;
+    justify-content: space-around;   
+    width:50px;     
+}
+.nav-link a:hover{
+    color: #FF6666;
+}
+.nav-link a{
+    color:#424075;
+    text-decoration:none;
+    font-size:12px;
+    display:absolute;
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-decoration:none  
+}
+.nav-link a:hover{
+    color: #FF6666;
+}
+.nav-link li{
+    list-style:none;
+}
+.main-text h6{
+    position: absolute;
+left: 4.46%;
+right: 84.27%;
+top: 15.28%;
+bottom: 73.26%;
+
+font-family: Nunito;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 44px;
+
+color: #FF6666;
+}
+
+
+.about p{
+    width: 30%;
+    position: absolute;
+    left: 4.12%;
+    right: 67.71%;
+    top: 35.28%;
+    bottom: 17.95%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    
+    color: #4D4D4D;
+}
+
+.social-media h6{
+    position: absolute;
+left: 4.46%;
+right: 90.2%;
+top: 89.97%;
+bottom: 7.43%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+/* secundaria */
+
+color: #484075;
+}
+
+.social-media h5{
+    position: absolute;
+left: 12.47%;
+right: 82.12%;
+top: 89.97%;
+bottom: 7.43%;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+/* secundaria */
+
+color: #484075;
+}
+
+ svg{
+    position: absolute;
+    left: 65.75%;
+    right: 10.41%;
+    top: 27.4%;
+    bottom: 18.81%;
+   
+}
